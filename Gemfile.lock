@@ -1,0 +1,181 @@
+PATH
+  remote: .
+  specs:
+    tldr-cli (0.3.0)
+      faraday
+      tty-markdown
+      tty-option
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.9)
+      public_suffix (>= 2.0.2, < 8.0)
+    base64 (0.3.0)
+    bigdecimal (4.1.0)
+    diff-lcs (1.6.2)
+    event_stream_parser (1.0.0)
+    faraday (2.14.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-multipart (1.2.0)
+      multipart-post (~> 2.0)
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
+    faraday-retry (2.4.0)
+      faraday (~> 2.0)
+    ffi (1.17.4-x86_64-linux-gnu)
+    hana (1.3.7)
+    http-2 (1.1.3)
+    httpx (1.7.5)
+      http-2 (>= 1.1.3)
+    informers (1.2.1)
+      onnxruntime (>= 0.9)
+      tokenizers (>= 0.5.3)
+    json (2.19.3)
+    json-schema (5.1.0)
+      addressable (~> 2.8)
+    json_schemer (2.5.0)
+      bigdecimal
+      hana (~> 1.3)
+      regexp_parser (~> 2.0)
+      simpleidn (~> 0.2)
+    kramdown (2.5.2)
+      rexml (>= 3.4.4)
+    logger (1.7.0)
+    marcel (1.1.0)
+    multipart-post (2.4.1)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
+    onnxruntime (0.11.1-x86_64-linux)
+      ffi
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    public_suffix (7.0.5)
+    rake (13.3.1)
+    regexp_parser (2.11.3)
+    rexml (3.4.4)
+    rouge (4.7.0)
+    rspec (3.13.2)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.8)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.7)
+    ruby_llm (1.14.1)
+      base64
+      event_stream_parser (~> 1)
+      faraday (>= 1.10.0)
+      faraday-multipart (>= 1)
+      faraday-net_http (>= 1)
+      faraday-retry (>= 1)
+      marcel (~> 1)
+      ruby_llm-schema (~> 0)
+      zeitwerk (~> 2)
+    ruby_llm-mcp (1.0.0)
+      httpx (~> 1.4)
+      json-schema (~> 5.0)
+      json_schemer (~> 2.4)
+      ruby_llm (~> 1.9)
+      zeitwerk (~> 2)
+    ruby_llm-schema (0.3.0)
+    sequel (5.103.0)
+      bigdecimal
+    simpleidn (0.2.3)
+    strings (0.2.1)
+      strings-ansi (~> 0.2)
+      unicode-display_width (>= 1.5, < 3.0)
+      unicode_utils (~> 1.4)
+    strings-ansi (0.2.0)
+    tokenizers (0.6.3-x86_64-linux)
+    tty-color (0.6.0)
+    tty-markdown (0.7.2)
+      kramdown (>= 1.16.2, < 3.0)
+      pastel (~> 0.8)
+      rouge (>= 3.14, < 5.0)
+      strings (~> 0.2.0)
+      tty-color (~> 0.5)
+      tty-screen (~> 0.8)
+    tty-option (0.3.0)
+    tty-screen (0.8.2)
+    unicode-display_width (2.6.0)
+    unicode_utils (1.4.0)
+    uri (1.1.1)
+    zeitwerk (2.7.5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  informers (~> 1.2)
+  rake (~> 13.0)
+  rspec (~> 3.0)
+  ruby_llm (~> 1.14)
+  ruby_llm-mcp (~> 1.0)
+  ruby_llm-schema (~> 0.3.0)
+  sequel (~> 5.103)
+  tldr-cli!
+
+CHECKSUMS
+  addressable (2.8.9) sha256=cc154fcbe689711808a43601dee7b980238ce54368d23e127421753e46895485
+  base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
+  bigdecimal (4.1.0) sha256=6dc07767aa3dc456ccd48e7ae70a07b474e9afd7c5bc576f80bd6da5c8dd6cae
+  diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
+  event_stream_parser (1.0.0) sha256=a2683bab70126286f8184dc88f7968ffc4028f813161fb073ec90d171f7de3c8
+  faraday (2.14.1) sha256=a43cceedc1e39d188f4d2cdd360a8aaa6a11da0c407052e426ba8d3fb42ef61c
+  faraday-multipart (1.2.0) sha256=7d89a949693714176f612323ca13746a2ded204031a6ba528adee788694ef757
+  faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
+  faraday-retry (2.4.0) sha256=7b79c48fb7e56526faf247b12d94a680071ff40c9fda7cf1ec1549439ad11ebe
+  ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
+  hana (1.3.7) sha256=5425db42d651fea08859811c29d20446f16af196308162894db208cac5ce9b0d
+  http-2 (1.1.3) sha256=1b2f379d35a11dbae94f8a1a52c053d8c161eb4a0c98b5d1605ff1b2bf171c9c
+  httpx (1.7.5) sha256=f002b7728ad108b721ab9c4e02b17b5c780581d490cd13245fc3d5c5b7127b6e
+  informers (1.2.1) sha256=f686f745f640333b9cbfbb380fcdd62d48cff78b8fd9f33ec2dfed1b5d1ecf6e
+  json (2.19.3) sha256=289b0bb53052a1fa8c34ab33cc750b659ba14a5c45f3fcf4b18762dc67c78646
+  json-schema (5.1.0) sha256=c12729e346dce58ecc9be07301f4f247aeba1e3daae208e867278f3d27c64eb7
+  json_schemer (2.5.0) sha256=2f01fb4cce721a4e08dd068fc2030cffd0702a7f333f1ea2be6e8991f00ae396
+  kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  marcel (1.1.0) sha256=fdcfcfa33cc52e93c4308d40e4090a5d4ea279e160a7f6af988260fa970e0bee
+  multipart-post (2.4.1) sha256=9872d03a8e552020ca096adadbf5e3cb1cd1cdd6acd3c161136b8a5737cdb4a8
+  net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
+  onnxruntime (0.11.1-x86_64-linux) sha256=90a47c9ab70103cdd4dd2b99b5179dfed909b44ceb77a1cf076e9dcff925079c
+  pastel (0.8.0) sha256=481da9fb7d2f6e6b1a08faf11fa10363172dc40fd47848f096ae21209f805a75
+  public_suffix (7.0.5) sha256=1a8bb08f1bbea19228d3bed6e5ed908d1cb4f7c2726d18bd9cadf60bc676f623
+  rake (13.3.1) sha256=8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c
+  regexp_parser (2.11.3) sha256=ca13f381a173b7a93450e53459075c9b76a10433caadcb2f1180f2c741fc55a4
+  rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
+  rouge (4.7.0) sha256=dba5896715c0325c362e895460a6d350803dbf6427454f49a47500f3193ea739
+  rspec (3.13.2) sha256=206284a08ad798e61f86d7ca3e376718d52c0bc944626b2349266f239f820587
+  rspec-core (3.13.6) sha256=a8823c6411667b60a8bca135364351dda34cd55e44ff94c4be4633b37d828b2d
+  rspec-expectations (3.13.5) sha256=33a4d3a1d95060aea4c94e9f237030a8f9eae5615e9bd85718fe3a09e4b58836
+  rspec-mocks (3.13.8) sha256=086ad3d3d17533f4237643de0b5c42f04b66348c28bf6b9c2d3f4a3b01af1d47
+  rspec-support (3.13.7) sha256=0640e5570872aafefd79867901deeeeb40b0c9875a36b983d85f54fb7381c47c
+  ruby_llm (1.14.1) sha256=7487d0f0bb9e86836d9233d656e10637370a6b22eb2555343c0a4c179ce7c500
+  ruby_llm-mcp (1.0.0) sha256=9ec242b233c065cbad64f4f0508b711c9d39b83a4fdd0b1d3fc9d70dc95d82dc
+  ruby_llm-schema (0.3.0) sha256=a591edc5ca1b7f0304f0e2261de61ba4b3bea17be09f5cf7558153adfda3dec6
+  sequel (5.103.0) sha256=51bf23374cc585724fc51a2ae8b95283422c97ca4585ce28f3db27a26ce55a69
+  simpleidn (0.2.3) sha256=08ce96f03fa1605286be22651ba0fc9c0b2d6272c9b27a260bc88be05b0d2c29
+  strings (0.2.1) sha256=933293b3c95cf85b81eb44b3cf673e3087661ba739bbadfeadf442083158d6fb
+  strings-ansi (0.2.0) sha256=90262d760ea4a94cc2ae8d58205277a343409c288cbe7c29416b1826bd511c88
+  tldr-cli (0.3.0)
+  tokenizers (0.6.3-x86_64-linux) sha256=77a45cbde59daac33bdda1a74d45c18080478992a00ee7d898e7b8d15d0b3149
+  tty-color (0.6.0) sha256=6f9c37ca3a4e2367fb2e6d09722762647d6f455c111f05b59f35730eeb24332a
+  tty-markdown (0.7.2) sha256=1ed81db97028d006ba81e2cfd9fe0a04b0eb28650ad0d4086ed6e5627f4ac511
+  tty-option (0.3.0) sha256=5a6e329d69ab35dace5fe046aa30d94bf27d6934f01e5cdb79caa1cc16c93105
+  tty-screen (0.8.2) sha256=c090652115beae764336c28802d633f204fb84da93c6a968aa5d8e319e819b50
+  unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
+  unicode_utils (1.4.0) sha256=b922d0cf2313b6b7136ada6645ce7154ffc86418ca07d53b058efe9eb72f2a40
+  uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
+  zeitwerk (2.7.5) sha256=d8da92128c09ea6ec62c949011b00ed4a20242b255293dd66bf41545398f73dd
+
+BUNDLED WITH
+  4.0.7
