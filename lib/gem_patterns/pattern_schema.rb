@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ruby_llm'
+require 'ruby_llm/schema'
 
 module GemPatterns
   # Schema for pattern generation
