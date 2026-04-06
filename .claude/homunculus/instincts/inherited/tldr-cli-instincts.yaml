@@ -1,0 +1,477 @@
+# Instincts generated from https://github.com/b08x/tldr-cli
+# Generated: 2026-04-06T01:12:02.284Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: tldr-cli-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat, chore, docs
+
+## Evidence
+
+- 7 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: add content parsers, SFL annotations, and database migrations, chore: add gem classifier tool and update gitignore
+
+---
+id: tldr-cli-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Commit Length
+
+## Action
+
+Keep commit messages concise (~44 characters)
+
+## Evidence
+
+- Average commit message length: 44 chars
+- Based on 7 commits
+
+---
+id: tldr-cli-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: tldr-cli-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: tldr-cli-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: tldr-cli-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: tldr-cli-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~26x per month
+- Files: **/*.test.*
+
+---
+id: tldr-cli-workflow-feature-development-with-cli-and-version-update
+trigger: "when doing feature development with cli and version update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Workflow Feature Development With Cli And Version Update
+
+## Action
+
+Follow the feature-development-with-cli-and-version-update workflow:
+1. Implement or update feature logic in lib/tldr/cli/commands.rb
+2. Update version in lib/tldr/cli/version.rb
+3. Update CHANGELOG.md to document the new feature
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: lib/tldr/cli/commands.rb, lib/tldr/cli/version.rb, CHANGELOG.md
+
+---
+id: tldr-cli-workflow-initialization-or-major-module-addition
+trigger: "when doing initialization or major module addition"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/b08x/tldr-cli
+---
+
+# Tldr Cli Workflow Initialization Or Major Module Addition
+
+## Action
+
+Follow the initialization-or-major-module-addition workflow:
+1. Add or update Gemfile and Gemfile.lock for dependencies
+2. Create or update database migration scripts in db/migrate/
+3. Add core library files in lib/ (often in a new subdirectory)
+4. Add supporting scripts, documentation, and/or tests
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: Gemfile, Gemfile.lock, db/migrate/*.rb
+
+---
+id: tldr-cli-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct File Naming
+
+## Action
+
+Name the file using snake_case (e.g., my_module.rb)
+
+## Evidence
+
+- Pattern in lib/content_adapter.rb
+- Pattern in lib/gem_patterns.rb
+
+---
+id: tldr-cli-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., parseContent)
+
+## Evidence
+
+- Pattern in Ruby codebase, inferred from naming conventions
+
+---
+id: tldr-cli-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., ContentAdapter)
+
+## Evidence
+
+- Pattern in lib/gem_patterns.rb
+- Pattern in lib/content_adapter.rb
+
+---
+id: tldr-cli-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., DEFAULT_PATH)
+
+## Evidence
+
+- Pattern in Ruby codebase, inferred from naming conventions
+
+---
+id: tldr-cli-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in lib/ files
+- Ruby convention
+
+---
+id: tldr-cli-instinct-export-style
+trigger: "When exporting modules or classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in lib/ files
+- Ruby convention
+
+---
+id: tldr-cli-instinct-test-location
+trigger: "When writing tests for a module"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Test Location
+
+## Action
+
+Place tests in the separate spec/ directory, mirroring the lib/ structure
+
+## Evidence
+
+- Pattern in folder structure: spec/
+- Pattern in workflow: feature-development
+
+---
+id: tldr-cli-instinct-test-after-feature
+trigger: "When implementing a new feature"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Test After Feature
+
+## Action
+
+Add or update corresponding tests after feature implementation
+
+## Evidence
+
+- Workflow: feature-development, commit sequence includes 'Add tests for feature'
+
+---
+id: tldr-cli-instinct-conventional-commits
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Conventional Commits
+
+## Action
+
+Use the conventional commit format: <type>: <description> (e.g., feat: add support to custom local pages)
+
+## Evidence
+
+- Seen in commit: feat: add content parsers, SFL annotations, and database migrations
+- Pattern in commit examples
+
+---
+id: tldr-cli-instinct-commit-types
+trigger: "When choosing a commit type"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Commit Types
+
+## Action
+
+Use one of the prefixes: feat, chore, or docs
+
+## Evidence
+
+- Pattern in commit prefixes: feat, chore, docs
+- Seen in commit examples
+
+---
+id: tldr-cli-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, averaging around 44 characters
+
+## Evidence
+
+- Average commit length: 44
+- Pattern in commit examples
+
+---
+id: tldr-cli-instinct-feature-cli-workflow
+trigger: "When adding a new CLI feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Feature Cli Workflow
+
+## Action
+
+Update lib/tldr/cli/commands.rb, bump version in lib/tldr/cli/version.rb, and update CHANGELOG.md
+
+## Evidence
+
+- Workflow: feature-development-with-cli-and-version-update
+- Example files: lib/tldr/cli/commands.rb, lib/tldr/cli/version.rb, CHANGELOG.md
+
+---
+id: tldr-cli-instinct-new-module-workflow
+trigger: "When adding a major new module or initializing the project"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct New Module Workflow
+
+## Action
+
+Update Gemfile and Gemfile.lock, add migrations to db/migrate/, add core files to lib/, and supporting files to spec/, README.md, and Rakefile
+
+## Evidence
+
+- Workflow: initialization-or-major-module-addition
+- Example files: Gemfile, Gemfile.lock, db/migrate/*.rb, lib/**, spec/**, README.md, Rakefile
+
+---
+id: tldr-cli-instinct-feature-dev-workflow
+trigger: "When developing a standard feature"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: b08x/tldr-cli
+---
+
+# Tldr Cli Instinct Feature Dev Workflow
+
+## Action
+
+Implement the feature, add tests, and update documentation in sequence
+
+## Evidence
+
+- Workflow: feature-development
+- Commit sequence: Add feature implementation, Add tests for feature, Update documentation
+
